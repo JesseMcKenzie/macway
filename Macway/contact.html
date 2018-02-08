@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MacWay | Contact</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <main role="main">
+    <header>
+      <div class="container">
+        <div id="logo">
+          <img src="./image/macway-transparent.png">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a href="products.html">Products</a></li>
+            <li>|</li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Form and Sidebar -->
+    <div class="container">
+      <div>
+        <h1>Get In Touch</h1>
+        <p>We are here to answer any queries you may have or feedback you may have about our business. Fill out the contact form below and we will respond as soon as we can.</p>
+      </div>
+      <div class="boxes" id="contact"> <!-- Contact Form and Sidebar -->
+        <form class="box contact-box-a">
+          <div class="line">
+            <div class="line-2">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Smith" value="" required>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+            <div class="line-2">
+              <label for="organisation">Organisation<span class="text-muted"> (Optional)</span></label>
+              <input type="text" class="form-control" id="organisation" placeholder="" value="">
+            </div>
+          </div>
+          <div class="line">
+            <div class="line-2">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                A valid address is required.
+              </div>
+            </div>
+            <div class="line-2">
+              <label for="phone">Phone<span class="text-muted"> (Optional)</span></label>
+              <input type="text" class="form-control" id="phone" placeholder="" value="">
+            </div>
+          </div>
+          <div class="line">
+            <div class="line-1">
+              <label for="subject">Subject<span class="text-muted"> (Optional)</span></label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter your subject here.." value="">
+            </div>
+          </div>
+          <div class="line">
+            <div class="line-1">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" placeholder="Write your message here.." required></textarea>
+              <div class="invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+          </div>
+          <div class="line">
+            <div class="line-1">
+              <div class="line-1">
+                <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="sidebar box contact-box-b"> <!-- Column 2 -->
+          <label for="phone">Phone</label>
+          <p>+64 21 277 2412</p>
+          <label for="address">Address</label>
+          <p>MacWay Limited</p>
+          <p>2/549 Halswell Junction Road,</p>
+          <p>Hornby South, Christchurch,</p>
+          <p>New Zealand, 8042</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="mb-1">&copy; MacWay Ltd</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+</body>
+</html>
